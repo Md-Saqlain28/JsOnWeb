@@ -20,8 +20,15 @@
 
 //Example 4
 
-document.getElementById("newItem").addEventListener("click", function () {
-  let newItem = document.createElement("li");
-  newItem.textContent = "Eggs";
-  document.getElementById("shoppingList").appendChild(newItem);
+// document.getElementById("newItem").addEventListener("click", function () {
+//   let newItem = document.createElement("li");
+//   newItem.textContent = "Eggs";
+//   document.getElementById("shoppingList").appendChild(newItem);
+// });
+
+//Example 5
+
+document.getElementById("removeTask").addEventListener("click", function () {
+  let taskList = document.getElementById("taskList");
+  taskList.lastElementChild.remove();
 });
